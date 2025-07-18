@@ -1,0 +1,278 @@
+* {
+    padding: 0px;
+}
+
+.mobile-options {
+    display: none;
+}
+
+.masInfo {
+    display: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+span {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.filtros {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.der,
+.izq {
+    width: 50%;
+    height: 100%;
+}
+
+.izq {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+#content {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    height: 100%;
+}
+
+.titulo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+}
+
+img {
+    height: 100%;
+    margin-left: 40px;
+}
+
+.options {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+a {
+    cursor: pointer;
+    margin-right: 70px;
+    color: white;
+}
+
+.info-izq {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-der {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.aux {
+    width: 85%;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+header {
+    height: 10%;
+}
+
+.title {
+    font-size: 60px;
+    color: white;
+}
+
+main {
+    height: 90%;
+    display: flex;
+}
+
+.botones {
+    font-size: 0;
+}
+
+button {
+    font-size: 50px;
+    margin: 0;
+    border: none;
+    padding: 15px;
+}
+
+.back {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.next {
+    border-radius: 0 20px 20px 0px;
+}
+
+.home-nav {
+    padding: 10px;
+}
+
+.home-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.info-nav {
+    padding: 10px;
+}
+
+.info-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-nav {
+    padding: 10px;
+}
+
+.contact-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.more-nav {
+    padding: 10px;
+}
+
+.more-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Se reordena el contenido cuando la pantalla es de un ancho menor que 950px */
+@media only screen and (max-width: 950px) {
+    .izq {
+        width: 60%;
+    }
+
+    .der {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .mobile-options option:first-child {
+        display: none;
+    }
+
+    .mobile-options {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    .mobile-div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 60%;
+        margin-right: 50px;
+    }
+
+    option {
+        color: black;
+    }
+
+    button {
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+
+
+}
+
+
+/* Se habilita el botón y se adapta el contenido a pantallas de celulares o de ancho más pequeño */
+@media only screen and (max-width: 700px) {
+    .info-izq {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-izq .aux {
+        max-height: 508px;
+        overflow: hidden;
+    }
+
+    .masInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        width: 150px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .mobile-div {
+        margin: 0px;
+    }
+
+    .titulo img {
+        height: 80%;
+        margin-left: 20px;
+
+    }
+
+}

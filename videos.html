@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../8-Videos/videos.css">
+    <script src="https://kit.fontawesome.com/98fb854785.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../8-Videos/img/logo.png">
+    <title>CAREERS</title>
+</head>
+
+<body>
+    <!-- VIDEO DE FONDO -->
+    <video autoplay muted loop id="video-background">
+        <source src="../8-Videos/video/informatica.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- EFECTO "DIFUMINADO" O "DESENFOQUE" A LA IZQUIERDA -->
+    <div class="filtros">
+        <div class="izq">
+
+        </div>
+        <div class="der">
+
+        </div>
+    </div>
+
+    <!-- CONTENIDO DE LA WEB -->
+    <div class="contenido" id="content">
+        <!-- HEADER -->
+        <header>
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="nav">
+                <div class="titulo">
+                    <img src="../8-Videos/img/logo.png">
+                    <span>CAREERS</span>
+                </div>
+
+                <!-- OPCIONES PARA PANTALLAS GRANDES -->
+                <div class="options">
+                    <a class="home-nav">HOME</a>
+                    <a class="info-nav">INFO</a>
+                    <a class="contact-nav">CONTACT</a>
+                    <a class="more-nav">MORE CAREERS</a>
+                </div>
+
+                <!-- OPCIONES PARA PANTALLAS PEQUEÑAS -->
+                <div class="mobile-div">
+                    <select class="mobile-options">
+                        <option value="opcion1" selected disabled>MORE OPTIONS</option>
+                        <option value="opcion1"><a>HOME</a></option>
+                        <option value="opcion2"><a>INFO</a></option>
+                        <option value="opcion3"><a>CONTACT</a></option>
+                        <option value="opcion4"><a>MORE CAREERS</a></option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <!-- LADO IZQUIERDO EN EL CUAL SE ENCUENTRA LA INFORMACIÓN -->
+            <div class="info-izq">
+                <div class="aux">
+                    <p class="title" id="title"><b>COMPUTER ENGINEERING</b>
+                    <p>
+                    <p id="txt" class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae explicabo
+                        modi iste
+                        optio Facere voluptate dolore, provident pariatur, officia consequatur quidem accusantium natus
+                        error impedit modi voluptatibus vel facilis repudiandae. Lorem ipsum dolor, sit amet
+                        consecteturadipisicing elit. Libero ut provident dolore modi. Assumenda repudiandae laborum,
+                        labore temporatemporibus similique optio tenetur illum quos odio aut, unde dignissimos,
+                        reiciendis eligendi?. <br><br> Repudiandae explicabo modi iste optio Facere voluptate dolore,
+                        provident pariatur, officia consequatur quidem accusantium natus error impedit modi voluptatibus
+                        vel facilis repudiandae. Lorem ipsum dolor, sit amet consecteturadipisicing elit. Libero ut
+                        provident dolore modi. Assumenda repudiandae laborum, labore temporatemporibus similique optio
+                        tenetur illum quos odio.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae explicabo modi iste
+                    </p>
+                </div>
+                <!-- BOTÓN DISPONIBLE PARA DISPOSITIVOS DE PANTALLA MÁS PEQUEÑA -->
+                <button class="masInfo">MORE INFORMATION</button>
+            </div>
+
+            <!-- LADO DERECHO, SE PUEDE VER LA PARTE DERECHA DEL VIDEO YA QUE NO TIENE EFECTO DE "DIFUMINACIÓN" O "DESENFOQUE" -->
+            <div class="info-der">
+                <!-- FLECHAS PARA CAMBIAR DE CONTENIDO -->
+                <div class="botones">
+                    <button class="back" onclick="anterior()"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next" onclick="siguiente()"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- JS EXTERNO -->
+    <script src="../8-Videos/videos.js"></script>
+</body>
+</html>
